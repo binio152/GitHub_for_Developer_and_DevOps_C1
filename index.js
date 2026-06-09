@@ -16,84 +16,97 @@ const sr = ScrollReveal({
   reset: false,
 });
 
-sr.reveal(".info-home", {
-  delay: 1210,
-  duration: 1012,
-  origin: "top",
-  distance: "320px",
-});
-sr.reveal(".home-img", {
-  delay: 120,
-  duration: 1012,
-  origin: "left",
-  distance: "680px",
-});
+const revealOptions = [
+  {
+    label: ".info-home",
+    delay: 1210,
+    duration: 1012,
+    origin: "top",
+    distance: "320px",
+  },
+  {
+    label: ".home-img",
+    delay: 120,
+    duration: 1012,
+    origin: "left",
+    distance: "680px",
+  },
+  {
+    label: ".about-img",
+    delay: 100,
+    duration: 1012,
+    origin: "left",
+  },
+  {
+    label: ".info-about",
+    delay: 200,
+    duration: 1012,
+    origin: "left",
+    distance: "220px",
+  },
+  {
+    label: ".aqua",
+    delay: 200,
+    duration: 380,
+    origin: "left",
+    distance: "240px",
+  },
+  {
+    label: ".kazuma",
+    delay: 200,
+    duration: 480,
+    origin: "left",
+    distance: "240px",
+  },
+  {
+    label: ".megumin",
+    delay: 200,
+    duration: 580,
+    origin: "left",
+    distance: "240px",
+  },
+  {
+    label: ".darkness",
+    delay: 200,
+    duration: 680,
+    origin: "left",
+    distance: "240px",
+  },
+  {
+    label: ".yunyun",
+    delay: 600,
+    duration: 380,
+    origin: "left",
+    distance: "240px",
+  },
+  {
+    label: ".wiz",
+    delay: 600,
+    duration: 480,
+    origin: "left",
+    distance: "240px",
+  },
+  {
+    label: ".eris",
+    delay: 600,
+    duration: 580,
+    origin: "left",
+    distance: "240px",
+  },
+  {
+    label: ".komekko_vanir",
+    delay: 600,
+    duration: 680,
+    origin: "left",
+    distance: "240px",
+  },
+];
 
-sr.reveal(".about-img", {
-  delay: 100,
-  duration: 1012,
-  origin: "left",
-});
-
-sr.reveal(".infor-about", {
-  delay: 200,
-  duration: 1012,
-  origin: "left",
-  distance: "220px",
-});
-
-sr.reveal(".aqua", {
-  delay: 200,
-  duration: 380,
-  origin: "left",
-  distance: "240px",
-});
-
-sr.reveal(".kazuma", {
-  delay: 200,
-  duration: 480,
-  origin: "left",
-  distance: "240px",
-});
-
-sr.reveal(".megumin", {
-  delay: 200,
-  duration: 580,
-  origin: "left",
-  distance: "240px",
-});
-
-sr.reveal(".darkness", {
-  delay: 200,
-  duration: 680,
-  origin: "left",
-  distance: "240px",
-});
-
-sr.reveal(".yunyun", {
-  delay: 600,
-  duration: 380,
-  origin: "left",
-  distance: "240px",
-});
-
-sr.reveal(".wiz", {
-  delay: 600,
-  duration: 480,
-  origin: "left",
-  distance: "240px",
-});
-
-sr.reveal(".eris", {
-  delay: 600,
-  duration: 580,
-  origin: "left",
-  distance: "240px",
-});
-
-sr.reveal(".komekko_vanir", {
-  delay: 600,
-  duration: 680,
-  origin: "left",
-  distance: "240px",
+revealOptions.forEach((option) => {
+  sr.reveal(option.label, {
+    delay: option.delay,
+    duration: option.duration,
+    origin: option.origin,
+    distance: option.distance,
+  });
 });
