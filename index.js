@@ -29,7 +29,12 @@ sr.reveal(".home-img", {
   distance: "680px",
 });
 
-sr.reveal(".about-img", { delay: 100, duration: 1012, origin: "left" });
+sr.reveal(".about-img", {
+  delay: 100,
+  duration: 1012,
+  origin: "left",
+});
+
 sr.reveal(".infor-about", {
   delay: 200,
   duration: 1012,
@@ -43,18 +48,21 @@ sr.reveal(".aqua", {
   origin: "left",
   distance: "240px",
 });
+
 sr.reveal(".kazuma", {
   delay: 200,
   duration: 480,
   origin: "left",
   distance: "240px",
 });
+
 sr.reveal(".megumin", {
   delay: 200,
   duration: 580,
   origin: "left",
   distance: "240px",
 });
+
 sr.reveal(".darkness", {
   delay: 200,
   duration: 680,
@@ -68,18 +76,21 @@ sr.reveal(".yunyun", {
   origin: "left",
   distance: "240px",
 });
+
 sr.reveal(".wiz", {
   delay: 600,
   duration: 480,
   origin: "left",
   distance: "240px",
 });
+
 sr.reveal(".eris", {
   delay: 600,
   duration: 580,
   origin: "left",
   distance: "240px",
 });
+
 sr.reveal(".komekko_vanir", {
   delay: 600,
   duration: 680,
