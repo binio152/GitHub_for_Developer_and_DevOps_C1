@@ -8,10 +8,20 @@
   --transition-fast: 0.3s ease;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
 }
 
 /* Navbar */
@@ -68,7 +78,6 @@
   display: inline-block;
 }
 
-.button-base,
 .btn1,
 .btn2,
 .submit-button {
