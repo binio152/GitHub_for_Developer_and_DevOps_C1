@@ -1,51 +1,69 @@
+:root {
+  --color-primary: rgba(88, 143, 231, 0.95);
+  --color-secondary: rgb(75, 163, 101);
+  --color-tertiary: rgb(209, 187, 77);
+  --color-text: rgb(26, 46, 29);
+  --color-text-soft: rgb(70, 67, 67);
+  --color-light: rgb(240, 240, 240);
+  --transition-fast: 0.3s ease;
+}
+
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
+
+/* Navbar */
 .navbar {
-  background-color: rgba(88, 143, 231);
+  background-color: var(--color-primary);
+  align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
-  align-items: center;
   position: fixed;
   width: 100vw;
   height: 13vh;
   z-index: 1000;
 }
-.logo img {
+
+.navbar .logo img {
   width: 10rem;
   padding-bottom: 1.5rem;
 }
-.nav-list {
+
+.navbar .nav-list {
   display: flex;
-  flex-direction: row;
 }
-.nav-list ul {
+
+.navbar .nav-list ul {
   display: flex;
   flex-direction: row;
   list-style: none;
 }
-.nav-list ul li a {
-  text-decoration: none;
+
+.navbar .nav-list ul li a {
+  color: var(--color-text);
   font-size: 1.2rem;
-  padding-right: 2rem;
   font-weight: 600;
-  color: rgb(26, 46, 29);
-  transition: all 1s ease;
+  padding-right: 2rem;
+  text-decoration: none;
+  transition: color 0.4s ease;
 }
-.nav-list ul li a:hover,
-.nav-list ul li a:focus {
+
+.navbar .nav-list ul li a:hover,
+.navbar .nav-list ul li a:focus {
   color: #c5cbce;
 }
-.close-btn,
-.open-btn {
+
+.navbar .close-btn,
+.navbar .open-btn {
+  cursor: pointer;
   display: none;
   font-size: 1.5rem;
   font-weight: bold;
-  cursor: pointer;
 }
+
 .btn-ib {
   display: inline-block;
 }
