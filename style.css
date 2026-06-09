@@ -78,7 +78,10 @@
   padding: 1rem 1.5rem;
   border-radius: 0.8rem;
   margin: 1.2rem 0.5rem;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background-color var(--transition-fast);
   cursor: pointer;
 }
 
@@ -326,55 +329,59 @@
   }
 }
 
-/* Character */
+/* Character section */
 #character {
   width: 100vw;
   background-color: rgba(184, 208, 190, 0.944);
   padding: 5rem 0;
-  height: auto;
-  margin: auto 0;
   position: relative;
   top: 12vh;
-  justify-content: center;
   text-align: center;
 }
-.char-tittle {
+
+#character .char-tittle {
   color: rgb(61, 94, 83);
   padding-top: 1rem;
   font-size: 2rem;
 }
-.grid-container {
+
+#character .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.1rem;
   padding: 1.5rem;
 }
-.char-container {
+
+#character .char-container {
   border: 2.4px solid rgb(23, 147, 118);
   padding: 0.2rem;
   border-radius: 0.4rem;
-  box-shadow: 0 4px 7px rgb(65, 140, 107);
+  box-shadow: 0 4px 7px rgba(65, 140, 107, 0.8);
 }
-.char-name {
-  font-size: 1rem;
+
+#character .char-name {
   color: rgb(61, 94, 83);
-  margin-bottom: 0.3rem;
+  font-size: 1rem;
   font-weight: 700;
+  margin-bottom: 0.3rem;
 }
-.char-container p {
+
+#character .char-container p {
   color: rgb(23, 147, 118);
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.09rem;
-  font-size: 0.8rem;
   margin-bottom: 0.25rem;
 }
-.char-container img {
+
+#character .char-container img {
   height: 18vh;
   cursor: pointer;
-  transition: all 1s ease;
   margin: 0.4rem;
+  transition: transform var(--transition-fast);
 }
-.char-container img:hover {
+
+#character .char-container img:hover {
   transform: scale(1.15);
 }
 
@@ -382,202 +389,199 @@
   #character {
     margin-top: 0;
   }
-  .grid-container {
+  #character .grid-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  .char-tittle {
+  #character .char-tittle {
     padding-top: 0.5rem;
     padding-bottom: 1rem;
   }
 }
 
-/*Gallery Section*/
+/* Gallery section */
 #gallery {
   width: 100vw;
   background-color: rgba(208, 189, 184, 0.944);
   padding: 5rem;
-  height: auto;
-  margin: auto 0;
   position: relative;
   top: 12vh;
-  justify-content: center;
   text-align: center;
 }
-.gallery-tittle {
-  padding-top: 1rem;
-  font-size: 2rem;
+
+#gallery .gallery-tittle {
   color: rgb(161, 63, 63);
+  font-size: 2rem;
+  padding-top: 1rem;
 }
-.gallery-grid {
-  padding: 2rem;
+
+#gallery .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  padding: 2rem;
 }
-.gallery-img {
+
+#gallery .gallery-img {
   width: 25vw;
-  transition: all 0.4s ease;
   border-radius: 0.35rem;
+  transition: transform 0.4s ease;
 }
-.gallery-img:hover,
-.gallery-img:focus {
+
+#gallery .gallery-img:hover,
+#gallery .gallery-img:focus {
   transform: translateY(-1rem);
 }
 
 @media (max-width: 900px) {
-  .gallery-grid {
-    background-color: rgba(208, 189, 184, 0.944);
+  #gallery .gallery-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(208, 189, 184, 0.944);
   }
-  .gallery-tittle {
+  #gallery .gallery-tittle {
     padding-top: 0.5rem;
     padding-bottom: 1rem;
   }
-  .gallery-grid img {
+  #gallery .gallery-grid img {
     width: 68vw;
   }
 }
 
-/*Contact Section*/
+/* Contact section */
 #contact {
   width: 100vw;
   background-color: rgba(204, 204, 175, 0.93);
   padding: 5rem;
-  height: auto;
-  margin: auto 0;
   position: relative;
   top: 12vh;
-  justify-content: center;
   text-align: center;
 }
-.contact-flex {
+
+#contact .contact-flex {
   display: flex;
   flex-direction: column;
 }
-.contact-tittle {
+
+#contact .contact-tittle {
   color: rgb(134, 118, 34);
   font-size: 2rem;
   margin-bottom: 2rem;
 }
-.section-content {
+
+#contact .section-content {
   width: 43vw;
 }
-.contact-grid {
+
+#contact .contact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.contact-info-list {
+
+#contact .contact-info-list {
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-self: flex-start;
 }
-.contact-info {
+
+#contact .contact-info {
   display: flex;
-  flex-direction: row;
   padding: 0.7rem;
 }
-.contact-info i {
+
+#contact .contact-info i {
   margin-right: 1.2rem;
 }
-form {
+
+#contact form {
   padding-top: 2rem;
   width: 36vw;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
 }
-form input,
-textarea {
+
+#contact form input,
+#contact textarea {
   padding: 0.35rem 1rem;
 }
-textarea {
+
+#contact textarea {
   height: 6rem;
 }
-.submit-button {
-  width: 6rem;
-  color: rgb(255, 251, 251);
-  font-weight: 700;
-  background-color: rgb(209, 187, 77);
-  border: none;
-  padding: 1rem 1.5rem;
-  box-shadow: 0 3px 8px rgba(88, 143, 231);
-  border-radius: 0.8rem;
-  margin: 1.2rem 0.5rem;
-  transition: all 1s ease;
+
+#contact .submit-button {
+  margin-left: 0;
 }
-.submit-button:hover,
-.submit-button:focus {
-  background-color: rgba(88, 143, 231);
-  box-shadow: 0 3px 8px rgb(209, 187, 77);
-  transform: scale(1.1);
-}
+
 @media (max-width: 900px) {
   #contact {
     padding: 2.5rem;
   }
-  .contact-flex {
+  #contact .contact-flex {
     flex-direction: column;
   }
-  .contact-grid {
+  #contact .contact-grid {
     grid-template-columns: 1fr;
     padding-left: 0.8rem;
   }
-  .contact-info-list {
+  #contact .contact-info-list {
     width: 90vw;
   }
-  form input,
-  textarea {
+  #contact form input,
+  #contact textarea {
     width: 60vw;
     margin-left: 2.2rem;
   }
-  .contact-tittle {
+  #contact .contact-tittle {
     padding-top: 0.5rem;
   }
-  .submit-button {
+  #contact .submit-button {
     margin-left: 2.2rem;
   }
 }
 
-/*Footer Section*/
+/* Footer section */
 footer {
   width: 100vw;
-  display: block;
   position: relative;
-  bottom: 0;
   top: 12vh;
 }
+
 .footer-container {
   display: flex;
-  padding: 1rem 3rem;
-  background-color: rgba(88, 143, 231);
   justify-content: space-between;
+  padding: 1rem 3rem;
+  background-color: var(--color-primary);
 }
+
 .footer-logo {
   font-weight: 600;
 }
+
 .footer-container img {
   width: 10vw;
 }
+
 .social-footer {
   display: flex;
   justify-content: space-between;
   column-gap: 1.5rem;
   font-size: 1.2rem;
 }
+
 .social-footer i:hover {
   transform: scale(1.5);
 }
+
 @media (max-width: 900px) {
   footer {
     font-size: 0.8rem;
   }
   .footer-container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding: 1rem 1.5rem;
   }
   .social-footer {
     font-size: 0.8rem;
