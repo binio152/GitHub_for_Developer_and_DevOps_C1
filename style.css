@@ -158,157 +158,140 @@
   }
 }
 
-/*Home Section*/
+/* Home section */
 #home {
-  padding-top: 4.2rem;
-  height: auto;
   position: relative;
   top: 12vh;
-  margin: 0;
-  padding: 0;
   width: 100vw;
 }
-.flex-wrap {
+
+#home .flex-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
 }
-.flex-wrap img {
+
+#home .flex-wrap img {
   width: 55vw;
-  justify-self: end;
   height: auto;
-  padding: 1rem auto;
+  padding: 1rem 0;
   margin: 2rem auto;
 }
-.info {
+
+#home .info {
   display: block;
   text-align: center;
   width: 38vw;
   padding: 2.5rem;
 }
-.info h1 {
-  color: palevioletred;
+
+#home .info h1,
+#about .info h1,
+#gallery .gallery-tittle,
+#contact .contact-tittle,
+#character .char-tittle {
   font-size: 2.2rem;
   margin: 1.2rem auto;
 }
-.info h2 {
+
+#home .info h1 {
+  color: palevioletred;
+}
+
+#home .info h2 {
   color: rgb(220, 135, 61);
   font-size: 1.3rem;
   margin: 1.2rem auto;
 }
-.info p {
-  color: rgb(70, 67, 67);
+
+#home .info p {
+  color: var(--color-text-soft);
   font-weight: 500;
   letter-spacing: 0.9px;
 }
-.btn1 {
-  color: rgb(240, 240, 240);
-  font-weight: 700;
-  background-color: rgba(88, 143, 231);
-  border: none;
-  padding: 1rem 1.5rem;
-  box-shadow: 0 3px 8px rgb(211, 143, 94);
-  border-radius: 0.8rem;
-  margin: 1.2rem 0.5rem;
-  transition: all 1s ease;
-}
-.btn2 {
-  color: rgb(240, 240, 240);
-  font-weight: 700;
-  background-color: rgb(75, 163, 101);
-  border: none;
-  padding: 1rem 1.5rem;
-  box-shadow: 0 3px 8px rgb(211, 102, 94);
-  border-radius: 0.8rem;
-  margin: 1.2rem 0.5rem;
-  transition: all 1s ease;
-}
-.btn1:hover {
-  background-color: rgb(211, 102, 94);
-  box-shadow: 0 3px 9px rgb(44, 213, 157);
-  transform: scale(1.1);
-}
-.btn2:hover {
-  background-color: rgb(209, 187, 77);
-  box-shadow: 0 3px 9px rgba(88, 143, 231);
-  transform: scale(1.1);
+
+#home .btn-ib {
+  display: inline-block;
 }
 
 @media (max-width: 900px) {
   #home {
     padding: 1rem;
   }
-  .flex-wrap {
+  #home .flex-wrap {
     flex-direction: column-reverse;
     align-items: center;
     padding: 1rem;
   }
-  .flex-wrap img {
+  #home .flex-wrap img {
     width: 68vw;
     margin: 0;
   }
-  .info {
+  #home .info {
     width: 76vw;
     font-size: 0.9rem;
     padding: 0;
     margin: 0;
   }
-  .info h1 {
+  #home .info h1 {
     font-size: 1.8rem;
   }
-  .info h2 {
+  #home .info h2 {
     font-size: 1.3rem;
   }
-  .info p {
+  #home .info p {
     line-height: 1.2rem;
   }
 }
 
-/*About Section*/
+/* About section */
 #about {
-  height: auto;
   position: relative;
   top: 12vh;
-  background-color: rgba(184, 201, 208, 0.944);
-  margin: 0;
   width: 100vw;
+  background-color: rgba(184, 201, 208, 0.944);
   text-align: center;
 }
-.about-img img {
+
+#about .about-img img {
   width: 32vw;
   margin: 3rem 4rem;
   transform: rotateY(-180deg);
   border-radius: 50%;
 }
+
 #about .info {
   width: 45vw;
-  margin: 1.5rem;
+  margin: 1.5rem auto;
   font-weight: 500;
 }
+
 #about .tittle {
   padding-right: 3.2rem;
 }
+
 #about .info ul {
   width: 90%;
   list-style: none;
-  justify-content: center;
+  margin: 0 auto;
 }
+
 #about .info li {
   text-align: justify;
   line-height: 1.5rem;
   letter-spacing: 0.8px;
   margin: 1rem 0;
 }
+
 #about .btn1 {
   margin-left: -0.9rem;
 }
+
 @media (max-width: 900px) {
   #about {
-    margin: 1rem 0;
-    height: auto;
-    margin-bottom: 0;
     padding: 1rem;
+    margin: 1rem 0 0;
   }
   .flex-about {
     flex-direction: column;
@@ -316,30 +299,23 @@
   }
   #about .info {
     width: 73vw;
-    text-align: center;
     margin: 0;
     line-height: 1.4rem;
     letter-spacing: normal;
   }
-  .info {
-    justify-content: center;
-  }
   #about .info ul {
     width: 100%;
   }
-  #about .info h1 {
+  #about .info h1,
+  #about .info h2 {
     padding: 1rem;
     margin: 1rem;
   }
-  #about .info h2 {
-    padding: 1rem;
-  }
   .about-img {
-    padding: 1.5rem;
-    padding-bottom: 0;
+    padding: 1.5rem 0 0;
     margin: 0;
   }
-  .about-img img {
+  #about .about-img img {
     width: 48vw;
     padding: 0;
     margin: 0;
@@ -350,7 +326,7 @@
   }
 }
 
-/*Character*/
+/* Character */
 #character {
   width: 100vw;
   background-color: rgba(184, 208, 190, 0.944);
