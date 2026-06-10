@@ -1,8 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en-US">
   <head>
-    <meta charser="UTF-8" lang="en-US" />
-    <meta name="viewport" content="width=device-witd, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Konosuba fan landing page with character profiles, gallery and contact details."
+    />
     <meta name="author" content="Binida2k1" />
     <title>Konosuba</title>
     <link
@@ -22,17 +26,18 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Primary navigation">
         <div class="logo">
           <img
             src="https://occ-0-8407-1723.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABWJ-1yzP_LSvMQAir5qFz6klLjpeQfEBuYwL8GM3YBjdnr0LqHmvubVsgT2BXRmCdFuhD9p9YcCoFfG-GCXU7n_0fomOgPyKCIPGGVHsDHWf.png?r=b71"
-            alt=""
+            alt="Konosuba logo"
           />
         </div>
         <div class="nav-list">
           <div class="close-btn">
-            <i class="ri-arrow-left-long-line"></i>
+            <i class="ri-arrow-left-long-line" aria-hidden="true"></i>
           </div>
           <ul class="nav-links">
             <li><a href="#" class="nav-item">Home</a></li>
@@ -43,230 +48,237 @@
           </ul>
         </div>
         <div class="open-btn">
-          <i class="ri-menu-2-fill"></i>
+          <i class="ri-menu-2-fill" aria-hidden="true"></i>
         </div>
       </nav>
     </header>
 
-    <section id="home">
-      <div></div>
-      <div class="flex-wrap">
-        <div class="info info-home">
-          <h1 class="tittle">Konosuba</h1>
-          <h2 class="tittle">God's Blessing on This Wonderful World!</h2>
-          <p>
-            Are you ready to embark on an unforgettable journey filled with
-            laughter, chaos, and adventure, as you join Kazuma and his quirky
-            team of misfits on their epic quest through a fantastical world?
-          </p>
-          <div class="btn-ib">
-            <button class="btn1">Discover</button>
-            <button class="btn2">Join Adventure</button>
+    <main id="main-content">
+      <section id="home" aria-labelledby="home-heading">
+        <div></div>
+        <div class="flex-wrap">
+          <div class="info info-home">
+            <h1 id="home-heading" class="tittle">Konosuba</h1>
+            <h2 class="tittle">God's Blessing on This Wonderful World!</h2>
+            <p>
+              Are you ready to embark on an unforgettable journey filled with
+              laughter, chaos, and adventure, as you join Kazuma and his quirky
+              team of misfits on their epic quest through a fantastical world?
+            </p>
+            <div class="btn-ib">
+              <button class="btn1">Discover</button>
+              <button class="btn2">Join Adventure</button>
+            </div>
+          </div>
+          <img
+            class="home-img"
+            src="https://images2.alphacoders.com/793/thumb-1920-793427.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="flex-wrap flex-about">
+          <div class="about-img">
+            <img src="https://i.redd.it/i0uux0ueac3a1.jpg" alt="" />
+          </div>
+          <div class="info infor-about">
+            <h1 class="tittle">Konosuba</h1>
+            <h2 class="tittle">God's Blessing on This Wonderful World!</h2>
+            <ul>
+              <li>
+                <strong>Plot: </strong> The story follows Kazuma Satou, a boy
+                who dies in an accident and is reincarnated into a fantasy
+                world.
+              </li>
+              <li>
+                <strong>Adventure: </strong> Kazuma is allowed to bring one item
+                or person with him. He chooses the unreliable goddess, Aqua.
+              </li>
+              <li>
+                <strong>Highlights: </strong> The series is known for its humor,
+                absurd situations, and lovable characters, blending fantasy
+                tropes with parody.
+              </li>
+            </ul>
+            <div class="btn-ib info-btn">
+              <button class="btn1">Discover</button>
+              <button class="btn2">Join Adventure</button>
+            </div>
           </div>
         </div>
-        <img
-          class="home-img"
-          src="https://images2.alphacoders.com/793/thumb-1920-793427.png"
-          alt=""
-        />
-      </div>
-    </section>
+      </section>
 
-    <section id="about">
-      <div class="flex-wrap flex-about">
-        <div class="about-img">
-          <img src="https://i.redd.it/i0uux0ueac3a1.jpg" alt="" />
-        </div>
-        <div class="info infor-about">
-          <h1 class="tittle">Konosuba</h1>
-          <h2 class="tittle">God's Blessing on This Wonderful World!</h2>
-          <ul>
-            <li>
-              <strong>Plot: </strong> The story follows Kazuma Satou, a boy who
-              dies in an accident and is reincarnated into a fantasy world.
-            </li>
-            <li>
-              <strong>Adventure: </strong> Kazuma is allowed to bring one item
-              or person with him. He chooses the unreliable goddess, Aqua.
-            </li>
-            <li>
-              <strong>Highlights: </strong> The series is known for its humor,
-              absurd situations, and lovable characters, blending fantasy tropes
-              with parody.
-            </li>
-          </ul>
-          <div class="btn-ib info-btn">
-            <button class="btn1">Discover</button>
-            <button class="btn2">Join Adventure</button>
+      <section id="character">
+        <h1 class="char-tittle">Characters</h1>
+        <div class="grid-container">
+          <div class="char-container aqua">
+            <a href="#aqua"
+              ><img
+                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/deox31h-db57d970-1fc9-48b8-affe-14362c7be34d.png/v1/fill/w_699,h_1144/chibi_aqua_by_thecatrizable_deox31h-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTYyMyIsInBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGVveDMxaC1kYjU3ZDk3MC0xZmM5LTQ4YjgtYWZmZS0xNDM2MmM3YmUzNGQucG5nIiwid2lkdGgiOiI8PTM0MzcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.3MeYsNShBk3IIGrAZ-HiQ5rbbHYTIrDnMqNbmK0rNeU"
+                alt=""
+            /></a>
+            <h1 class="char-name">Aqua</h1>
+            <p>Clumsy water goddess.</p>
+          </div>
+          <div class="char-container kazuma">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/deot3as-868f7c4a-c3a5-4511-a850-c02238c67c08.png/v1/fill/w_681,h_1173/chibi_kazuma_by_thecatrizable_deot3as-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTE0MCIsInBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGVvdDNhcy04NjhmN2M0YS1jM2E1LTQ1MTEtYTg1MC1jMDIyMzhjNjdjMDgucG5nIiwid2lkdGgiOiI8PTI5ODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.sHBFybrwFjMCkLxxT5__SxunDsVJHCoOLAHaB8-OdOk"
+              alt=""
+            />
+            <h1 class="char-name">Kazuma</h1>
+            <p>Clever and unlucky adventurer.</p>
+          </div>
+          <div class="char-container megumin">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/dep4yka-b5a4f710-d7fe-4f0d-9a97-cf2dd6e02a87.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGVwNHlrYS1iNWE0ZjcxMC1kN2ZlLTRmMGQtOWE5Ny1jZjJkZDZlMDJhODcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JIEpqeE0tFklN0S9FPNCgPlva-GOratOs0e3p5sOnz4"
+              alt=""
+            />
+            <h1 class="char-name">Megumin</h1>
+            <p>Explosion-obsessed mage.</p>
+          </div>
+          <div class="char-container darkness">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/dep14i7-1013b8d5-ccdb-4d0b-8357-9361a8cd504f.png/v1/fill/w_711,h_1124,strp/chibi_darkness_by_thecatrizable_dep14i7-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTcxMyIsInBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGVwMTRpNy0xMDEzYjhkNS1jY2RiLTRkMGItODM1Ny05MzYxYThjZDUwNGYucG5nIiwid2lkdGgiOiI8PTM2MTQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.rxqSsbU1acLPwZP2qK3Pu7PUCN-DXkGhuILjLHP71T0"
+              alt=""
+            />
+            <h1 class="char-name">Darkness</h1>
+            <p>Masochistic crusader.</p>
+          </div>
+          <div class="char-container yunyun">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/dep7hn5-9fc299b5-ad3b-4bd9-a6b3-53af4d38dd17.png/v1/fill/w_739,h_1082/chibi_yunyun__konosuba_sticker__by_thecatrizable_dep7hn5-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDY4OCIsInBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGVwN2huNS05ZmMyOTliNS1hZDNiLTRiZDktYTZiMy01M2FmNGQzOGRkMTcucG5nIiwid2lkdGgiOiI8PTMyMDIifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ziihotBQTKAuHnwh4X8w6aYJ4XL9-dID3ZY2RhA9MvY"
+              alt=""
+            />
+            <h1 class="char-name">YunYun</h1>
+            <p>Lonely and skilled mage.</p>
+          </div>
+          <div class="char-container wiz">
+            <a href="#wiz"
+              ><img
+                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/dep9hg7-ef14514a-24f4-419f-938c-f39a9d1a328f.png/v1/fill/w_679,h_1177,strp/chibi_wiz__konosuba_sticker__by_thecatrizable_dep9hg7-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTYzMyIsInBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGVwOWhnNy1lZjE0NTE0YS0yNGY0LTQxOWYtOTM4Yy1mMzlhOWQxYTMyOGYucG5nIiwid2lkdGgiOiI8PTMyNDgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.1lK7ZM0G7URqKO0ztb8CMQZpoSF3o8q2YIebIjKt7xc"
+                alt=""
+            /></a>
+            <h1 class="char-name">Wiz</h1>
+            <p>Kindhearted lich and shopkeeper.</p>
+          </div>
+          <div class="char-container eris">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/df06rhx-b6578d67-68dd-4533-9a2c-8ff71743015a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGYwNnJoeC1iNjU3OGQ2Ny02OGRkLTQ1MzMtOWEyYy04ZmY3MTc0MzAxNWEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.rAZ6oBOsyGjlwJKHYAJwALYuBkCRCCAXsDe_lVemZsY"
+              alt=""
+            />
+            <h1 class="char-name">Eris</h1>
+            <p>Gentle and humble goddess.</p>
+          </div>
+          <div class="char-container komekko_vanir">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/df2rsx2-04e87aab-cdc2-4aa5-b55d-95123a5f5d8c.png/v1/fill/w_879,h_909,strp/chibi_komekko__chomusuke_and_vanir__konosuba__by_thecatrizable_df2rsx2-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc3NyIsInBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGYycnN4Mi0wNGU4N2FhYi1jZGMyLTRhYTUtYjU1ZC05NTEyM2E1ZjVkOGMucG5nIiwid2lkdGgiOiI8PTU1ODIifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.7FS4nJ90bxHbBUoTXbVNoF4lye4SQeYjbZpbFkNlpt0"
+              alt=""
+            />
+            <h1 class="char-name">Komekko & Vanir</h1>
+            <p>Mischievous little girl & Witty demon.</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="character">
-      <h1 class="char-tittle">Characters</h1>
-      <div class="grid-container">
-        <div class="char-container aqua">
-          <a href="#aqua"
-            ><img
-              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/deox31h-db57d970-1fc9-48b8-affe-14362c7be34d.png/v1/fill/w_699,h_1144/chibi_aqua_by_thecatrizable_deox31h-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTYyMyIsInBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGVveDMxaC1kYjU3ZDk3MC0xZmM5LTQ4YjgtYWZmZS0xNDM2MmM3YmUzNGQucG5nIiwid2lkdGgiOiI8PTM0MzcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.3MeYsNShBk3IIGrAZ-HiQ5rbbHYTIrDnMqNbmK0rNeU"
-              alt=""
-          /></a>
-          <h1 class="char-name">Aqua</h1>
-          <p>Clumsy water goddess.</p>
-        </div>
-        <div class="char-container kazuma">
+      <section id="gallery" class="gallery">
+        <h1 class="gallery-tittle">Gallery</h1>
+        <div class="gallery-grid">
           <img
-            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/deot3as-868f7c4a-c3a5-4511-a850-c02238c67c08.png/v1/fill/w_681,h_1173/chibi_kazuma_by_thecatrizable_deot3as-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTE0MCIsInBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGVvdDNhcy04NjhmN2M0YS1jM2E1LTQ1MTEtYTg1MC1jMDIyMzhjNjdjMDgucG5nIiwid2lkdGgiOiI8PTI5ODgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.sHBFybrwFjMCkLxxT5__SxunDsVJHCoOLAHaB8-OdOk"
+            src="https://images6.alphacoders.com/789/789431.png"
             alt=""
+            class="gallery-img"
           />
-          <h1 class="char-name">Kazuma</h1>
-          <p>Clever and unlucky adventurer.</p>
-        </div>
-        <div class="char-container megumin">
           <img
-            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/dep4yka-b5a4f710-d7fe-4f0d-9a97-cf2dd6e02a87.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGVwNHlrYS1iNWE0ZjcxMC1kN2ZlLTRmMGQtOWE5Ny1jZjJkZDZlMDJhODcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JIEpqeE0tFklN0S9FPNCgPlva-GOratOs0e3p5sOnz4"
+            src="https://rare-gallery.com/thumbs/4522261-kono-subarashii-sekai-ni-shukufuku-wo-megumin-sat-kazuma-kono-subarashii-sekai-ni-shukufuku-wo.png"
             alt=""
+            class="gallery-img"
           />
-          <h1 class="char-name">Megumin</h1>
-          <p>Explosion-obsessed mage.</p>
-        </div>
-        <div class="char-container darkness">
           <img
-            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/dep14i7-1013b8d5-ccdb-4d0b-8357-9361a8cd504f.png/v1/fill/w_711,h_1124,strp/chibi_darkness_by_thecatrizable_dep14i7-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTcxMyIsInBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGVwMTRpNy0xMDEzYjhkNS1jY2RiLTRkMGItODM1Ny05MzYxYThjZDUwNGYucG5nIiwid2lkdGgiOiI8PTM2MTQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.rxqSsbU1acLPwZP2qK3Pu7PUCN-DXkGhuILjLHP71T0"
+            src="https://rare-gallery.com/uploads/posts/542186-konosuba-gods.jpg"
             alt=""
+            class="gallery-img"
           />
-          <h1 class="char-name">Darkness</h1>
-          <p>Masochistic crusader.</p>
-        </div>
-        <div class="char-container yunyun">
           <img
-            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/dep7hn5-9fc299b5-ad3b-4bd9-a6b3-53af4d38dd17.png/v1/fill/w_739,h_1082/chibi_yunyun__konosuba_sticker__by_thecatrizable_dep7hn5-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDY4OCIsInBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGVwN2huNS05ZmMyOTliNS1hZDNiLTRiZDktYTZiMy01M2FmNGQzOGRkMTcucG5nIiwid2lkdGgiOiI8PTMyMDIifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ziihotBQTKAuHnwh4X8w6aYJ4XL9-dID3ZY2RhA9MvY"
+            src="https://rare-gallery.com/thumbs/1040949-illustration-anime-artwork-cartoon-Kono-Subarashii-Sekai-ni-Shukufuku-wo-Megumin-Aqua-KonoSuba-Darkness-KonoSuba-Sat-Kazuma-Kono-Subarashii-Sekai-ni-Shukufuku-wo-screen.jpg"
             alt=""
+            class="gallery-img"
           />
-          <h1 class="char-name">YunYun</h1>
-          <p>Lonely and skilled mage.</p>
-        </div>
-        <div class="char-container wiz">
-          <a href="#wiz"
-            ><img
-              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/dep9hg7-ef14514a-24f4-419f-938c-f39a9d1a328f.png/v1/fill/w_679,h_1177,strp/chibi_wiz__konosuba_sticker__by_thecatrizable_dep9hg7-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTYzMyIsInBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGVwOWhnNy1lZjE0NTE0YS0yNGY0LTQxOWYtOTM4Yy1mMzlhOWQxYTMyOGYucG5nIiwid2lkdGgiOiI8PTMyNDgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.1lK7ZM0G7URqKO0ztb8CMQZpoSF3o8q2YIebIjKt7xc"
-              alt=""
-          /></a>
-          <h1 class="char-name">Wiz</h1>
-          <p>Kindhearted lich and shopkeeper.</p>
-        </div>
-        <div class="char-container eris">
           <img
-            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/df06rhx-b6578d67-68dd-4533-9a2c-8ff71743015a.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGYwNnJoeC1iNjU3OGQ2Ny02OGRkLTQ1MzMtOWEyYy04ZmY3MTc0MzAxNWEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.rAZ6oBOsyGjlwJKHYAJwALYuBkCRCCAXsDe_lVemZsY"
+            src="https://wallpaperaccess.com/full/1290898.png"
             alt=""
+            class="gallery-img"
           />
-          <h1 class="char-name">Eris</h1>
-          <p>Gentle and humble goddess.</p>
-        </div>
-        <div class="char-container komekko_vanir">
           <img
-            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8449490e-eb15-4e41-a595-3469e4f7bdd2/df2rsx2-04e87aab-cdc2-4aa5-b55d-95123a5f5d8c.png/v1/fill/w_879,h_909,strp/chibi_komekko__chomusuke_and_vanir__konosuba__by_thecatrizable_df2rsx2-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc3NyIsInBhdGgiOiJcL2ZcLzg0NDk0OTBlLWViMTUtNGU0MS1hNTk1LTM0NjllNGY3YmRkMlwvZGYycnN4Mi0wNGU4N2FhYi1jZGMyLTRhYTUtYjU1ZC05NTEyM2E1ZjVkOGMucG5nIiwid2lkdGgiOiI8PTU1ODIifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.7FS4nJ90bxHbBUoTXbVNoF4lye4SQeYjbZpbFkNlpt0"
+            src="https://rare-gallery.com/thumbs/4528024-kono-subarashii-sekai-ni-shukufuku-wo-aqua-konosuba-darkness-konosuba-megumin-sat-kazuma-kono-subarashii-sekai-ni-shukufuku-wo-wizu-konosuba-minimalism.png"
             alt=""
+            class="gallery-img"
           />
-          <h1 class="char-name">Komekko & Vanir</h1>
-          <p>Mischievous little girl & Witty demon.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="gallery" class="gallery">
-      <h1 class="gallery-tittle">Gallery</h1>
-      <div class="gallery-grid">
-        <img
-          src="https://images6.alphacoders.com/789/789431.png"
-          alt=""
-          class="gallery-img"
-        />
-        <img
-          src="https://rare-gallery.com/thumbs/4522261-kono-subarashii-sekai-ni-shukufuku-wo-megumin-sat-kazuma-kono-subarashii-sekai-ni-shukufuku-wo.png"
-          alt=""
-          class="gallery-img"
-        />
-        <img
-          src="https://rare-gallery.com/uploads/posts/542186-konosuba-gods.jpg"
-          alt=""
-          class="gallery-img"
-        />
-        <img
-          src="https://rare-gallery.com/thumbs/1040949-illustration-anime-artwork-cartoon-Kono-Subarashii-Sekai-ni-Shukufuku-wo-Megumin-Aqua-KonoSuba-Darkness-KonoSuba-Sat-Kazuma-Kono-Subarashii-Sekai-ni-Shukufuku-wo-screen.jpg"
-          alt=""
-          class="gallery-img"
-        />
-        <img
-          src="https://wallpaperaccess.com/full/1290898.png"
-          alt=""
-          class="gallery-img"
-        />
-        <img
-          src="https://rare-gallery.com/thumbs/4528024-kono-subarashii-sekai-ni-shukufuku-wo-aqua-konosuba-darkness-konosuba-megumin-sat-kazuma-kono-subarashii-sekai-ni-shukufuku-wo-wizu-konosuba-minimalism.png"
-          alt=""
-          class="gallery-img"
-        />
-      </div>
-    </section>
-
-    <section id="contact" class="contact-flex">
-      <h1 class="contact-tittle">Contact me</h1>
-      <div class="contact-grid">
-        <div class="section-content">
-          <ul class="contact-info-list">
-            <li class="contact-info">
-              <i class="ri-building-fill"></i>
-              <p>123 Di An, Binh Duong, VN</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-solid fa-envelope"></i>
-              <p>info@konosuba.com</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-solid fa-phone"></i>
-              <p>0123 456 789</p>
-            </li>
-            <li class="contact-info">
-              <i class="ri-calendar-schedule-fill"></i>
-              <p>Weekday: 9:00 AM - 10:00 PM</p>
-            </li>
-            <li class="contact-info">
-              <i class="ri-calendar-schedule-fill"></i>
-              <p>Saturday: 9:00 AM - 11:00 PM</p>
-            </li>
-            <li class="contact-info">
-              <i class="ri-calendar-schedule-fill"></i>
-              <p>Sunday: Offline</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-solid fa-globe"></i>
-              <p>www.binida2k1.com</p>
-            </li>
-          </ul>
+      <section
+        id="contact"
+        class="contact-flex"
+        aria-labelledby="contact-heading"
+      >
+        <h1 id="contact-heading" class="contact-tittle">Contact me</h1>
+        <div class="contact-grid">
+          <div class="section-content">
+            <ul class="contact-info-list">
+              <li class="contact-info">
+                <i class="ri-building-fill"></i>
+                <p>123 Di An, Binh Duong, VN</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-solid fa-envelope"></i>
+                <p>info@konosuba.com</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-solid fa-phone"></i>
+                <p>0123 456 789</p>
+              </li>
+              <li class="contact-info">
+                <i class="ri-calendar-schedule-fill"></i>
+                <p>Weekday: 9:00 AM - 10:00 PM</p>
+              </li>
+              <li class="contact-info">
+                <i class="ri-calendar-schedule-fill"></i>
+                <p>Saturday: 9:00 AM - 11:00 PM</p>
+              </li>
+              <li class="contact-info">
+                <i class="ri-calendar-schedule-fill"></i>
+                <p>Sunday: Offline</p>
+              </li>
+              <li class="contact-info">
+                <i class="fa-solid fa-globe"></i>
+                <p>www.binida2k1.com</p>
+              </li>
+            </ul>
+          </div>
+          <form action="#" class="contact-form">
+            <input
+              type="text"
+              class="form-input"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              class="form-input"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              class="form-input msg"
+              placeholder="Your Message"
+            ></textarea>
+            <button class="submit-button">Submit</button>
+          </form>
         </div>
-        <form action="#" class="contact-form">
-          <input
-            type="text"
-            class="form-input"
-            placeholder="Your Name"
-            required
-          />
-          <input
-            type="email"
-            class="form-input"
-            placeholder="Your Email"
-            required
-          />
-          <textarea
-            class="form-input msg"
-            placeholder="Your Message"
-          ></textarea>
-          <button class="submit-button">Submit</button>
-        </form>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer>
       <div class="footer-container">
