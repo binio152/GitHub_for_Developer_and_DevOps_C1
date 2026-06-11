@@ -7,3 +7,5 @@
 7
 adding some text from rebasing sha HEAD~3
 adding some text from rebasing sha HEAD~2
+
+adding some text from rebasing sha HEAD~3 new
