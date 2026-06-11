@@ -19,8 +19,8 @@ html {
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
-  line-height: 1.5;
+  font-family: "Inter", "Poppins", "Segoe UI", sans-serif;
+  line-height: 1.6;
   color: var(--color-text);
 }
 
