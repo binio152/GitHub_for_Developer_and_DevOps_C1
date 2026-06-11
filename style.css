@@ -139,13 +139,18 @@ body {
   }
   .navbar .nav-list.active {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     position: fixed;
-    width: 50vw;
+    width: min(80vw, 320px);
     top: 0;
     left: 0;
     height: 100vh;
-    background-color: aliceblue;
+    padding: 1.5rem 1.5rem 2rem;
+    background-color: #f1f7ff;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.18);
+    z-index: 1050;
   }
   .navbar .nav-list ul li a {
     color: rgb(65, 105, 225);
@@ -155,18 +160,45 @@ body {
     color: rgb(211, 102, 94);
   }
   .navbar .close-btn {
-    position: relative;
-    top: 2rem;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    color: rgb(65, 105, 225);
+    font-size: 1.8rem;
+    cursor: pointer;
   }
   .navbar .nav-list ul {
-    position: relative;
-    top: 6rem;
+    width: 100%;
+    margin-top: 5rem;
     flex-direction: column;
-    line-height: 4rem;
+    line-height: 3.5rem;
   }
   .navbar .open-btn,
   .navbar .close-btn {
     display: block;
+  }
+  .navbar .open-btn {
+    position: relative;
+    z-index: 1100;
+    background: transparent;
+    border: none;
+    color: var(--color-light);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .navbar .open-btn i,
+  .navbar .close-btn i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar .nav-list ul li a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 100%;
   }
 }
 
