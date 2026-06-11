@@ -7,3 +7,8 @@
 7
 
 adding some text from rebasing sha HEAD~3 and rebasing sha HEAD~2
+
+adaa2d4 (change text file after rebasing twice)
+
+
+ahjhj
